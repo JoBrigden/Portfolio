@@ -1,0 +1,168 @@
+/*Universal styles*/
+
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: left;
+  line-height: 1.4;
+}
+
+.container {
+  display: flex;
+}
+
+h1 {
+  font-family: 'Libre Franklin', sans-serif;
+  font-weight: 700;
+  font-size: 2.5em;
+  color: #33373B;
+  margin: 0;
+}
+
+h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+/*Header*/
+.header {
+  align-items: center;
+  height: 5em;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  border-bottom: solid 0.01em #33373B;
+  background-color: #FFFFFF;
+  padding: 0.5em 0;
+  border-top: 1em;
+  overflow: hidden;
+}
+
+#logo {
+  height: 4em;
+  padding: 0.5em 2em;
+}
+
+.title {
+  text-align: right;
+  flex-grow: 1;
+  padding-right: 1.5em;
+}
+
+.title p {
+  font-style: italic;
+}
+
+/* Side Navigation */
+.sidenav {
+  max-height: 100%;
+  width: 12em;
+  padding: 6.4em 1.5em;
+  background-color: #ACB0B3;
+}
+
+.sidenav li {
+  line-height: 2.8;
+  cursor: pointer;
+}
+
+#about {
+  padding: 2.5em 0.25em;
+  font-style: italic;
+}
+
+#about img {
+  padding-left: 1em;
+}
+
+/* Main content */
+.banner {
+  display: block;
+  position: relative;
+  padding-top: 6em;
+  width: 100%;
+  height: 100%;
+}
+
+.banner img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.image {
+  margin-bottom: -0.32em;
+  margin-left: -0.1em;
+}
+
+.featured-work {
+  text-align: center;
+  border: solid 0.01em #33373B;
+}
+
+.featured-work h2 {
+  padding-top: 2em;
+  color: #33373B;
+}
+
+.featured-work h3 {
+  font-weight: 700;
+  color: #33373B;
+}
+
+#featured {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-bottom: 3em;
+}
+
+.image-container {
+  display: block;
+  text-align: center;
+  width: 28%;
+  margin: 1em;
+}
+
+.image-container img {
+  max-width: 100%;
+  overflow: hidden;
+  border: solid 0.1em #33373B;
+}
+
+.credentials {
+  background-color: #ACB0B3;
+  margin-left: -0.1em;
+}
+
+#credentials {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 2em 0;
+}
+
+#credentials img {
+  border: none;
+  margin: 2em;
+  width: 30%;
+  height: 20%;
+}
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 1em;
+  border: solid 0.01em #33373B;
+  margin-top: -1.45em;
+}
+
+footer a {
+  padding: 0 0.5em;
+}
