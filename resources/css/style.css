@@ -17,7 +17,7 @@ h1 {
   font-family: 'Libre Franklin', sans-serif;
   font-weight: 700;
   font-size: 2.5em;
-  color: #33373B;
+  color: #33373b;
   margin: 0;
 }
 
@@ -37,8 +37,8 @@ header {
   position: fixed;
   width: 100%;
   z-index: 1;
-  border-bottom: solid 0.01em #33373B;
-  background-color: #FFFFFF;
+  border-bottom: solid 0.01em #33373b;
+  background-color: #fff;
   padding: 0.5em 0;
   border-top: 1em;
   overflow: hidden;
@@ -68,7 +68,7 @@ header {
   max-height: 100%;
   width: 12em;
   padding: 6.4em 1.5em;
-  background-color: #ACB0B3;
+  background-color: #acb0b3;
 }
 
 .sidenav li {
@@ -113,8 +113,7 @@ header {
 }
 
 #about-mobile {
-  align-items:;
-  background-color: #FFF;
+  background-color: #fff;
   padding: 0.5em;
   opacity: 0.8;
 }
@@ -130,17 +129,17 @@ header {
 
 .featured-work {
   text-align: center;
-  border: solid 0.01em #33373B;
+  border: solid 0.01em #33373b;
 }
 
 .featured-work h2 {
   padding-top: 2em;
-  color: #33373B;
+  color: #33373b;
 }
 
 .featured-work h3 {
   font-weight: 700;
-  color: #33373B;
+  color: #33373b;
 }
 
 #featured {
@@ -160,11 +159,11 @@ header {
 .image-container img {
   max-width: 100%;
   overflow: hidden;
-  border: solid 0.1em #33373B;
+  border: solid 0.1em #33373b;
 }
 
 .credentials {
-  background-color: #ACB0B3;
+  background-color: #acb0b3;
   margin-left: -0.1em;
 }
 
@@ -187,26 +186,26 @@ footer {
   flex-wrap: wrap;
   justify-content: center;
   padding: 1em 1em 1.3em 1em;
-  border: solid 0.01em #33373B;
+  border: solid 0.01em #33373b;
   margin-top: -1.45em;
 }
 
 footer a {
   padding: 0 0.5em;
-  color: #33373B;
+  color: #33373b;
 }
 
 /* Psuedo class */
 #visited a:link, #featured a:link {
-  color: #33373B;
+  color: #33373b;
 }
 
 #visited a:hover, #featured a:hover {
-  color: #8F6A4B;
+  color: #8f6a4b;
 }
 
 #visited a:active {
-  color: white;
+  color: #fff;
 }
 
 .image-container a:hover {
@@ -215,23 +214,14 @@ footer a {
 
 /* Media queries */
 @media screen and (max-width: 599px) {
-  h1 {
-    font-size: 1em;
-  }
-
+  h1,
   h2 {
     font-size: 1em;
   }
 
-  h3 {
-    font-size: 0.75em;
-  }
-
-  .image-container p {
-    font-size: 0.75em;
-  }
-
-  .title p {
+  h3,
+  .image-container p,
+  .title p  {
     font-size: 0.75em;
   }
 
@@ -249,7 +239,7 @@ footer a {
     position: absolute;
     right: 0;
     padding: 1.5em;
-    color: #33373B;
+    color: #33373b;
   }
 
   .title {
@@ -273,7 +263,7 @@ footer a {
   }
 
   .nav-item {
-    border-bottom: 1px solid #33373B;
+    border-bottom: 1px solid #33373b;
     width: 100%;
     text-align: left;
   }
@@ -317,22 +307,13 @@ footer a {
 }
 
 @media screen and (min-width: 450px) {
-  h1 {
-    font-size: 1.5em;
-  }
-
-  .title p {
-    font-size: 1em;
-  }
-
+  h1,
   h2 {
     font-size: 1.5em;
   }
 
-  h3 {
-    font-size: 1em;
-  }
-
+  h3,
+  .title p,
   .image-container p {
     font-size: 1em;
   }
