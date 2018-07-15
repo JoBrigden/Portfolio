@@ -1,5 +1,4 @@
 /*Universal styles*/
-
 body {
   margin: 0;
   font-family: 'Open Sans', sans-serif;
@@ -7,6 +6,7 @@ body {
   font-size: 16px;
   text-align: left;
   line-height: 1.4;
+  color: #33373B;
 }
 
 .container {
@@ -59,6 +59,10 @@ header {
   font-style: italic;
 }
 
+.header-menu {
+  display: none;
+}
+
 /* Side Navigation */
 .sidenav {
   max-height: 100%;
@@ -82,12 +86,16 @@ header {
 }
 
 /* Main content */
+.about-mobile {
+  display: none;
+}
+
 .banner {
   display: block;
   position: relative;
   padding-top: 6em;
-  width: 100%;
-  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .banner img {
@@ -95,9 +103,29 @@ header {
   max-height: 100%;
 }
 
+.banner-mobile {
+  padding: 1em;
+  display: block;
+  background-image: url("../images/granite-grass-2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-height: 100%;
+}
+
+#about-mobile {
+  align-items:;
+  background-color: #FFF;
+  padding: 0.5em;
+  opacity: 0.8;
+}
+
+#about-mobile img {
+  height: 30%;
+  width: 30%;
+}
+
 .image {
-  margin-bottom: -0.32em;
-  margin-left: -0.1em;
+  margin-bottom: -0.3em;
 }
 
 .featured-work {
@@ -158,11 +186,181 @@ footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 1em;
+  padding: 1em 1em 1.3em 1em;
   border: solid 0.01em #33373B;
   margin-top: -1.45em;
 }
 
 footer a {
   padding: 0 0.5em;
+  color: #33373B;
+}
+
+/* Psuedo class */
+#visited a:link, #featured a:link {
+  color: #33373B;
+}
+
+#visited a:hover, #featured a:hover {
+  color: #8F6A4B;
+}
+
+#visited a:active {
+  color: white;
+}
+
+.image-container a:hover {
+  filter: brightness(120%);
+}
+
+/* Media queries */
+@media screen and (max-width: 599px) {
+  h1 {
+    font-size: 1em;
+  }
+
+  h2 {
+    font-size: 1em;
+  }
+
+  h3 {
+    font-size: 0.75em;
+  }
+
+  .image-container p {
+    font-size: 0.75em;
+  }
+
+  .title p {
+    font-size: 0.75em;
+  }
+
+  #logo {
+    height: 2.5em;
+    padding: 1em;
+  }
+
+  .header {
+    height: 3em;
+  }
+
+  .header-menu {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    padding: 1.5em;
+    color: #33373B;
+  }
+
+  .title {
+    padding-right: 4.7em;
+  }
+
+  .sidenav {
+    z-index: 10;
+    width: 300px;
+    position: fixed;
+    -webkit-transform: translate(-350px, 0);
+    transform: translate(-350px, 0);
+    transition: transform 0.1s ease;
+    padding: 0 1em;
+    margin-top: 4em;
+  }
+
+  .sidenav.open {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+
+  .nav-item {
+    border-bottom: 1px solid #33373B;
+    width: 100%;
+    text-align: left;
+  }
+
+  li.mobile {
+    display: none;
+  }
+
+  #about {
+    display: none;
+  }
+
+  .image {
+    display: none;
+  }
+
+  #about-mobile {
+    display: flex;
+  }
+
+  .banner {
+    padding-top: 4em;
+  }
+
+  .featured-work h2 {
+    padding-top: 0.5em;
+  }
+
+  #featured {
+    padding-bottom: 0;
+  }
+
+  .image-container {
+    width: 70%;
+  }
+
+  #credentials img {
+    max-width: 50%;
+    height: 15%;
+  }
+}
+
+@media screen and (min-width: 450px) {
+  h1 {
+    font-size: 1.5em;
+  }
+
+  .title p {
+    font-size: 1em;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+
+  h3 {
+    font-size: 1em;
+  }
+
+  .image-container p {
+    font-size: 1em;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .banner-mobile {
+    display: none;
+  }
+
+  .featured-work h2 {
+    padding-top: 0.5em;
+  }
+
+  .image-container {
+    width: 40%;
+  }
+
+  #credentials img {
+    width: 35%;
+    height: 15%;
+  }
+}
+
+@media screen and (min-width: 850px) {
+  main {
+    width: 54em;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
