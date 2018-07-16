@@ -13,20 +13,6 @@ body {
   display: flex;
 }
 
-h1 {
-  font-family: 'Libre Franklin', sans-serif;
-  font-weight: 700;
-  font-size: 2.5em;
-  color: #33373b;
-  margin: 0;
-}
-
-h2 {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 1.5em;
-  font-weight: 700;
-}
-
 /*Header*/
 .header {
   align-items: center;
@@ -53,6 +39,14 @@ header {
   text-align: right;
   flex-grow: 1;
   padding-right: 1.5em;
+}
+
+.title h1 {
+  font-family: 'Libre Franklin', sans-serif;
+  font-weight: 700;
+  font-size: 2.5em;
+  color: #33373b;
+  margin: 0;
 }
 
 .title p {
@@ -91,8 +85,8 @@ header {
 }
 
 .banner {
-  display: block;
-  position: relative;
+  display: flex;
+  flex-direction: column;
   padding-top: 6em;
   max-width: 100%;
   max-height: 100%;
@@ -105,7 +99,6 @@ header {
 
 .banner-mobile {
   padding: 1em;
-  display: block;
   background-image: url("../images/granite-grass-2.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -133,6 +126,9 @@ header {
 }
 
 .featured-work h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.5em;
+  font-weight: 700;
   padding-top: 2em;
   color: #33373b;
 }
@@ -181,7 +177,8 @@ header {
   height: 20%;
 }
 
-footer {
+/* Footer */
+#contact {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -190,7 +187,7 @@ footer {
   margin-top: -1.45em;
 }
 
-footer a {
+#contact a {
   padding: 0 0.5em;
   color: #33373b;
 }
@@ -214,12 +211,12 @@ footer a {
 
 /* Media queries */
 @media screen and (max-width: 599px) {
-  h1,
-  h2 {
+  .title h1,
+  .featured-work h2 {
     font-size: 1em;
   }
 
-  h3,
+  .featured-work h3,
   .image-container p,
   .title p  {
     font-size: 0.75em;
@@ -268,7 +265,7 @@ footer a {
     text-align: left;
   }
 
-  li.mobile {
+  .nav li.mobile {
     display: none;
   }
 
@@ -307,12 +304,12 @@ footer a {
 }
 
 @media screen and (min-width: 450px) {
-  h1,
-  h2 {
+  .title h1,
+  .featured-work h2 {
     font-size: 1.5em;
   }
 
-  h3,
+  .featured-work h3,
   .title p,
   .image-container p {
     font-size: 1em;
